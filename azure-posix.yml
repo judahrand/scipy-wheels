@@ -90,11 +90,11 @@ jobs:
       - bash: |
           set -e
           if [ "$BUILD_COMMIT" == "master" ]; then
-            ANACONDA_ORG="scipy-wheels-nightly"
+            ANACONDA_ORG="judahrand"
             TOKEN="$MAPPED_SCIPY_WHEELS_NIGHTLY"
             echo getting SCIPY_WHEELS_NIGHTLY
           else
-            ANACONDA_ORG="multibuild-wheels-staging"
+            ANACONDA_ORG="judahrand"
             TOKEN="$MAPPED_SCIPY_STAGING_UPLOAD_TOKEN"
             echo getting SCIPY_STAGING_UPLOAD_TOKEN
           fi
